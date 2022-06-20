@@ -15,6 +15,22 @@ main{
     background-color: black;
     display: flex;
 }
+
+.side-bar{
+    width: 250px;
+    flex-shrink: 0;
+    background-color: blue;
+    height: 100%
+}
+.sd-top{
+    height: calc();
+}
+.content .menu ul li{
+    display: inline-block;
+    list-style: none;
+
+}
+
 /* footer */
 footer{
     height: 100px;
