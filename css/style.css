@@ -4,18 +4,23 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: sans-serif;
+}
 
 .layout{
     width: 100%;
     height: 100vh;
 }
-/* main */
-main{
-    height: calc( 100vh - 100px);
-    background-color: black;
-    display: flex;
+/* debug */
+.box-debug{
+    width: 200px;
+    height: 100%;
+    background-color: blueviolet;
+
 }
 
+/* aside */
 .side-bar{
     width: 250px;
     flex-shrink: 0;
@@ -25,11 +30,34 @@ main{
 .sd-top{
     height: calc();
 }
-.content .menu ul li{
+
+
+
+/* main */
+
+
+main{
+    height: calc( 100vh - 100px);
+    background-color: red;
+    display: flex;
+}
+
+
+.content ul li{
     display: inline-block;
-    list-style: none;
+    list-style: none; 
 
 }
+
+.cta{
+    position: fixed;
+    text-align: right;
+    width: calc(100% - 250px);
+    height: 50px;
+    background-color: darkgray;
+    top: 0;
+    left: 250px;
+} 
 
 /* footer */
 footer{
@@ -40,4 +68,9 @@ footer{
     display: flex;
     justify-content: space-between;
     height: 100%;
+}
+
+footer .control{
+    display: inline-block;
+    list-style: none;
 }
