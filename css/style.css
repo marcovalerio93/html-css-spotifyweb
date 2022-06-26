@@ -40,12 +40,30 @@ body{
     min-height: 400px;
 }
 .sd-top{ 
-    height: calc(100% - 80px)
+    height: calc(100% - 80px);
+    display: flex;
+    flex-direction: column;
+}
+
+.sd-menu{ 
+    list-style: none;
+}
+
+.sd-playlist{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.sd-playlist ul{
+    list-style: none;
+    overflow-y: scroll;
 }
 .sd-bottom{
     height: 80px;
     background-color: black;   
 }
+
+
 
 /* main */
 
