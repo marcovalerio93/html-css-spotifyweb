@@ -31,11 +31,20 @@ body{
     overflow: hidden;
 }
 
+/* main */
+
+
+main{
+    height: calc( 100vh - 100px);
+    background-color: red;
+    display: flex;
+}
+
 /* aside */
 .side-bar{
     width: 250px;
     flex-shrink: 0;
-    background-color: blue;
+    background-color:#000;
     height: 100%;
     min-height: 400px;
 }
@@ -45,14 +54,58 @@ body{
     flex-direction: column;
 }
 
-.sd-menu{ 
+.logo{
+    padding: 20px;
+}
+ 
+
+.logo-mobile{
+    display: none ;
+}
+
+.active img{ 
+    width: 30px;
+    display: inline-block;
+    vertical-align: middle ;
+}
+.active a{
+    color: #fff;
+    text-decoration: none; 
+}
+
+.sd-menu ul{ 
     list-style: none;
+}
+
+.active span{
+    display: inline-block;
+    vertical-align: middle;
+}
+.menu-list li{
+    border-left: solid 2px transparent;
+}
+
+.menu-list  li.active{
+    border-left: solid 2px lightgreen  ;
+}
+
+.sd-menu{ 
+    margin-left: 20px;
+    list-style: none;
+    color: #fff;
 }
 
 .sd-playlist{
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    color:#fff;
+    margin-left: 20px;
+}
+.sd-playlist a{
+    color: #fff;
+    text-decoration: none;
+    
 }
 .sd-playlist ul{
     list-style: none;
@@ -64,15 +117,8 @@ body{
 }
 
 
+/* content */
 
-/* main */
-
-
-main{
-    height: calc( 100vh - 100px);
-    background-color: red;
-    display: flex;
-}
 
 .content{
     width: calc( 100vw - 250px);
@@ -160,4 +206,21 @@ footer .control{
         width: calc(100% - 50px);        
         left: 50px;
     } 
-}
+    .logo{
+        display: none;
+    }
+    
+    .logo-mobile{
+        display: block ;
+        padding: 10px;
+    }
+    .sd-playlist{
+        display: none;
+    }
+    .active span{
+        display: none;
+    }
+    .sd-menu {
+        margin-left: 10px;
+    }
+} 
