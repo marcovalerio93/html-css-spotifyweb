@@ -4,14 +4,8 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{
-    font-family: sans-serif;
-}
 
-.layout{
-    width: 100%;
-    height: 100vh;
-}
+
 /* debug */
 .box-debug{
     width: 200px;
@@ -20,18 +14,30 @@ body{
 
 }
 
+.debug .album-item{
+    height: 300px;
+    background-color: brown;
+}
+
+/* fine debug  */
+
+body{
+    font-family: sans-serif;
+}
+
+.layout{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
 /* aside */
 .side-bar{
     width: 250px;
     flex-shrink: 0;
     background-color: blue;
-    height: 100%
 }
 .sd-top{
-    height: calc();
 }
-
-
 
 /* main */
 
@@ -42,11 +48,9 @@ main{
     display: flex;
 }
 
-
-.content ul li{
-    display: inline-block;
-    list-style: none; 
-
+.content{
+    width: calc( 100vw - 250px);
+    overflow-y:scroll
 }
 
 .cta{
@@ -57,12 +61,41 @@ main{
     background-color: darkgray;
     top: 0;
     left: 250px;
+    z-index: 98;
 } 
+
+.menu ul li{
+    display: inline-block;
+    list-style: none; 
+
+}
+.menu{
+    margin-top: 60px;
+    text-align: center;
+}
+
+.row{
+    margin-left: 20px;
+}
+
+.album{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+.album-item{
+    width: calc(100% / 6 - 10px);
+    margin-top: 10px;
+    margin-right: 10px; 
+}
 
 /* footer */
 footer{
     height: 100px;
     background-color: grey;
+    position: relative;
+    z-index: 99;
+    
 }
 #player{ 
     display: flex;
@@ -74,3 +107,7 @@ footer .control{
     display: inline-block;
     list-style: none;
 }
+
+
+
+
