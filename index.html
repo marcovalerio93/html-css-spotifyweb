@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>spotify</title>
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- icone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+
 </head>
 <body class="debug">
 
@@ -42,8 +47,8 @@
                     </section>
 
                     <section class="sd-playlist">
-                        <h3>PLAYLIST</h3>
-                        <a href="#">CERCA PLAYLIST</a>
+                        <h4>PLAYLIST</h4>
+                        <a href="#"><i class="fa-solid fa-plus p10"></i> Cerca Playlist</a>
                         <ul>
                             <li>Nuova Plailist</li>
                             <li>Nuova Plailist</li>
@@ -69,45 +74,80 @@
 
             <div class="content">
                 <div class="cta">
-                    EFFETUA L'UPGRADE
+                    <button>EFFETUA L'UPGRADE</button> 
                 </div>
                 <nav class="menu">
                     <ul>
-                        <li>IN EVIDENZA</li>
-                        <li>PODCAST</li>
-                        <li>CLASSIFICHE</li>
-                        <li>GENERI E MOOD</li>
-                        <li>NUOVE USCITE</li>
-                        <li>SCOPRI</li>
+                        <li><a class="underline" href="#">IN EVIDENZA</a></li>
+                        <li><a class="underline" href="#">PPODCAST</a></li>
+                        <li><a class="underline" href="#">CLASSIFICHE</a></li>
+                        <li><a class="underline" href="#" href="#">GENERI E MOOD</a></li>
+                        <li><a class="underline" href="#" href="#">NUOVE USCITE</a></li>
+                        <li><a class="underline" href="#" href="#">SCOPRI</a></li>
                     </ul>
                 </nav>
                 <section class="covers">
                     <div  class="row">
                         <h2>Recently player</h2> 
                         <ul class="album">
-                            <li class="album-item">album 1</li>
-                            <li class="album-item">album 2</li>
-                            <li class="album-item">album 3</li>
-                            <li class="album-item">album 4</li>
-                            <li class="album-item">album 5</li>
-                            <li class="album-item">album 6</li> 
+                            <li class="album-item">
+                                <img src="img/metal_lifting.jpg" alt="havy metal">
+                                <h4>Heavy metal</h4>
+                                <p>Subtilte</p>
+
+                            </li>
+                            <li class="album-item">
+                                <img src="img/stranger.jpeg" alt="stranger things">
+                                <h4>Stranger Things, vol. 1 (a Netflix Original Series Soundtruck)</h4>
+                                <p>Kyle Dixon & Michael Stein</p>
+                            </li>
+                            <li class="album-item">
+                                <img src="img/aquietplace.jpeg" alt="a quite place">
+                                <h4>A quite place</h4>
+                                <p>Subtilte</p>
+                            </li>
+                            <li class="album-item">
+                                <img src="img/split.jpeg" alt="split">
+                                <h4>Split</h4>
+                                <p>Subtilte</p>
+                            </li>
+                            <li class="album-item">
+                                <img src="img/cure.jpeg" alt="a cure of wellness">
+                                <h4>a cure of wellness</h4>
+                                <p>Subtilte</p>
+                            </li>
+                            <li class="album-item"><img src="img/sinister.jpeg" alt="sinister">
+                                <h4>Sinister</h4>
+                                <p>Subtilte</p></li> 
                         </ul>
                     </div>
                     <div  class="row">
                         <h2>Creato per Jhon Doe</h2> 
-                        <p class="description"> Lorem ipsum dolor sit amet consectetur.</p>
+                        <p> Lorem ipsum dolor sit amet consectetur.</p>
                         <ul class="album">
-                            <li class="album-item">album 1</li>
-                            <li class="album-item">album 2</li>
+                            <li class="album-item">
+                                <img src="img/radar.jpeg" alt="realese radar">
+                                <h4>Realise Radar</h4>
+                            </li>
+                            <li class="album-item">
+                                <img src="img/mixdaily.jpeg" alt="mix">
+                                <h4>Daily Mix 1</h4>
+                            </li>
 
                         </ul>
                     </div>
                     <div  class="row">
                         <h2>Artisti più popolari </h2> 
-                        <p class="description">Lorem ipsum dolor sit amet consectetur.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
                         <ul class="album">
-                            <li class="album-item">album 1</li>
-                            <li class="album-item">album 2</li>
+                            <li class="album-item b-radius">
+                                <img class="br" src="img/youg.jpeg" alt="youg">
+                                <h4>Youg</h4>
+                            </li>
+                            <li class="album-item">
+                                <img class="br" src="img/einaudi.jpeg" alt="einaudi">
+                                <h4>Einaudi</h4>
+                            </li>
                         </ul>
                     </div>
                     
@@ -120,24 +160,37 @@
 
             <section id="player">
                 <div class="palyer-album">
-                    <div class="box-debug">
-                      left  
+
+                    <div class="p-a-cover">
+                        <img src="img/sinister.jpeg" alt="sinister">
                     </div>
+
+                    <div class="p-a-title">
+                        <h4>Sinister</h4>
+                        <p>Brano nome</p>
+                    </div>
+                    
+                    <div class="p-a-icone">
+                        <a href="#"><i class="fa-light fa-heart"></i></a>
+                        <a href="#"><i class="fa-light fa-folder"></i></a>
+                    </div>
+                    
 
                 </div>
                 <div class="player-bar">
-                    <ul class="control">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
+                    <div class="p-b-icone">
+                        <ul class="control">
+                            <li><i class="fa-solid fa-shuffle"></i></li>
+                            <li><i class="fa-solid fa-backward-step"></i></li>
+                            <li><i class="fa-solid fa-play"></i></li>
+                            <li><i class="fa-solid fa-forward-step"></i></li>
+                            <li><i class="fa-regular fa-rotate-right"></i></li>
+                        </ul>
+                    </div>
+                    
                     <div class="time-line">
-                        <div class="box-debug">
-                            ceter-b
-                          </div>
-
+                        
+  
                     </div>
                 </div>
                 <div class="player-audio">
